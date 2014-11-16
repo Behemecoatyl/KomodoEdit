@@ -483,7 +483,7 @@ module.exports = {
      */
     insert: function(text)
     {
-        var selection = this.getSelectionRange();
+        var selection = this.getSelectionRange('absolute');
         if (selection.start != selection.end && selection.end)
         {
             scimoz().deleteBack();
